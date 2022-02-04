@@ -41,15 +41,11 @@ export const AppointmentForm = ({
           required
           onChange={({ target }) => setTime(target.value)}
         />
-        <ContactPicker contacts={contacts} setContact={setContact} />
-        {/* {contacts && (
-          <select onChange={({ target }) => console.log(target.value)}>
-            {contacts.map((value) => {
-              return <option value={value.name}>{value.name}</option>;
-            })}
-          </select>
-        )} */}
-        {}
+        <ContactPicker
+          contacts={contacts}
+          contact={contact}
+          setContact={setContact}
+        />
         <input className='submit' type='submit' value='Add Contact' />
       </form>
     </div>

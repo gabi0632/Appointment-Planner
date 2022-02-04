@@ -7,7 +7,7 @@ export const AppointmentsPage = ({
   addAppointment,
 }) => {
   const [title, setTitle] = useState('');
-  const [contact, setContact] = useState({});
+  const [contact, setContact] = useState('no contact');
   const [data, setData] = useState('');
   const [time, setTime] = useState('');
 
